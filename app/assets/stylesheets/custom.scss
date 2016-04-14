@@ -3,25 +3,32 @@
 /*Attributes*/
 /*Body*/
 /*Box-Sizing*/
+/*Buttons*/
 /*Center*/
 /*Headings*/
+/*Paragraphs*/
 /*Navbar*/
 
 
 /* - Attributes - */
 a {
-
+  color: inherit;
 }
 
 
 
 /* - Body - */
 body {
-    font-family: "Rubik", Arial, sans-serif;
-    font-size: 23.125px;
-    line-height: 1.428571429;
-    color: #000000;
-    background-color: #fff;
+  font-family: "Rubik", Arial, sans-serif;
+  font-size: 23.125px;
+  line-height: 1.428571429;
+  color: #000000; 
+  background-image: url(rocks-fog-path-foggy.jpg);
+  background-color: #fff;
+}
+
+.overlay body{
+  background-color: rgba(255,255,255,0.3);
 }
 
 
@@ -34,6 +41,55 @@ html {
   box-sizing: inherit;
 }
 
+
+
+/*Buttons*/
+
+.btn, .btn-large, .btn-flat {
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    outline: 0;
+    padding: 0 2rem;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  background-color: #ffffff;
+  border: solid 2px #ebebeb;
+  border-radius: 5px;
+  color: #000000;
+  display: inline-block;
+  font-size: 20px;
+  padding: 5px 30px 5px 30px;
+}
+
+button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.facebook {
+
+}
+
+.facebook:hover {
+  
+}
+
+.twitter {
+  background-color: #1da1f2;
+  color: #ffffff;
+}
+
+.twitter:hover {
+  background-color: rgba(29, 161, 242, 0.55);
+  color: rgba(0, 0, 0, 0.55);
+}
 
 
 /* - Center - */
@@ -85,8 +141,14 @@ h6 {
 
 
 
-/* - Nav Bar - */
+/*Paragraphs*/
+p {
+  font-size: 25px;
+}
 
+
+
+/* - Nav Bar - */
 
 img.celtic-head {
 	max-width: 96%;
