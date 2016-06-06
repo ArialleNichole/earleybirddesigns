@@ -4,15 +4,36 @@
 /*Body*/
 /*Box-Sizing*/
 /*Buttons*/
-/*Center*/
+/*Columns*/
+/*Alignment*/
 /*Headings*/
+/*Images*/
 /*Paragraphs*/
 /*Navbar*/
+
+
+/* - Center - */
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.left {
+  text-align: left;
+}
 
 
 /* - Attributes - */
 a {
   color: inherit;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #f8991d;
 }
 
 
@@ -22,13 +43,14 @@ body {
   font-family: "Rubik", Arial, sans-serif;
   font-size: 23.125px;
   line-height: 1.428571429;
-  color: #000000; 
-  background-image: url(rocks-fog-path-foggy.jpg);
+  color: #383434; 
   background-color: #fff;
+  padding-bottom: 25px;
+  min-height: 1200px;
 }
 
-.overlay body{
-  background-color: rgba(255,255,255,0.3);
+.overlay {
+  background-color: rgba(255,255,255,0.5);
 }
 
 
@@ -68,17 +90,28 @@ button {
   padding: 5px 30px 5px 30px;
 }
 
+button a {
+  text-decoration: none;
+}
+
+button a:hover {
+  color: #383434;
+  text-decoration: none;
+}
+
 button:hover {
-  background-color: #000000;
-  color: #ffffff;
+  color: #383434;
+  text-decoration: none;
 }
 
 .facebook {
-
+  background-color: #3b5998;
+  color: #ffffff;
 }
 
 .facebook:hover {
-  
+  background-color: rgba(59, 89, 152, 0.55);
+  color: rgba(0, 0, 0, 0.55);
 }
 
 .twitter {
@@ -91,13 +124,15 @@ button:hover {
   color: rgba(0, 0, 0, 0.55);
 }
 
-
-/* - Center - */
-.center {
-	text-align: center;
+/* - Columns - */
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10 {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-
+.row {
+  margin-left: 10%;
+}
 
 /* - Headings - */
 
@@ -141,7 +176,22 @@ h6 {
 
 
 
-/*Paragraphs*/
+/* - Images - */
+.rounded {
+  border-radius: 10px;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.gallery-size {
+  width: 300px;
+  height: 300px;
+}
+
+
+/* - Paragraphs - */
 p {
   font-size: 25px;
 }
@@ -151,9 +201,9 @@ p {
 /* - Nav Bar - */
 
 img.celtic-head {
-	max-width: 96%;
-	width: auto 100%;
-	padding-left: 2%;
+	max-width: 50%;
+	padding-left: 25%;
+  padding-top: 10px;
 }
 
 .navbar-brand {
@@ -179,6 +229,15 @@ img.celtic-head {
        1px 1px 0 #000;
 }
 
+.navbar-collapse {
+  background: rgba(248, 153, 32, .5);
+  text-align: center;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 .navbar-default .navbar-brand {
   color: #265E22;
 }
@@ -188,11 +247,13 @@ img.celtic-head {
 }
 
 .navbar-default {
+  background-color: inherit;
   border-color: #e7e7e7;
 }
 
 .navbar-default .navbar-nav > li > a {
   color: #000;
+  text-decoration: none;
 }
 
 .navbar {
@@ -200,11 +261,14 @@ img.celtic-head {
   min-height: 100px;
   margin-bottom: 20px;
   border: 1px solid transparent;
-
 }
 
 .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
   margin-left: 0; 
+}
+
+.container-fluid {
+  background-color: none;
 }
 
 @media (min-width: 360px) {
@@ -238,7 +302,7 @@ img.celtic-head {
 
 @media (min-width: 1280px) {
 	.center-logo {
-		margin-left: 41%;
+		margin-left: 38%;
 	}
 }
 
