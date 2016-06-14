@@ -10,6 +10,7 @@
 /*Images*/
 /*Paragraphs*/
 /*Navbar*/
+/*Well*/
 
 
 /* - Center - */
@@ -43,14 +44,13 @@ body {
   font-family: "Rubik", Arial, sans-serif;
   font-size: 23.125px;
   line-height: 1.428571429;
-  color: #383434; 
-  background-color: #fff;
-  padding-bottom: 25px;
+  color: #E6E6E6; 
+  background-image: url(rocks-fog-path-foggy.jpg);
   min-height: 1200px;
 }
 
 .overlay {
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.25);
 }
 
 
@@ -60,7 +60,7 @@ html {
   box-sizing: inherit;
 }
 *, *:before, *:after {
-  box-sizing: inherit;
+box-sizing: inherit;
 }
 
 
@@ -124,6 +124,8 @@ button:hover {
   color: rgba(0, 0, 0, 0.55);
 }
 
+
+
 /* - Columns - */
 .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10 {
   padding-top: 15px;
@@ -133,6 +135,14 @@ button:hover {
 .row {
   margin-left: 10%;
 }
+
+.over-con {
+  width: 100%;
+  min-height: 1200px;
+  background-color: rgba(255,255,255,0.25);
+}
+
+
 
 /* - Headings - */
 
@@ -198,7 +208,7 @@ p {
 
 
 
-/* - Nav Bar - */
+/* - NavBar - */
 
 img.celtic-head {
 	max-width: 50%;
@@ -207,7 +217,7 @@ img.celtic-head {
 }
 
 .navbar-brand {
-  color: #000000;
+  color: #383434;
   float: right;
   font-size: 56px;
   font-family: "Eagle Lake";
@@ -229,7 +239,7 @@ img.celtic-head {
 }
 
 .navbar-collapse {
-  background: rgba(248, 153, 32, .5);
+  background: rgba(248, 153, 29, .5);
   text-align: center;
 }
 
@@ -237,12 +247,13 @@ img.celtic-head {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+
 .navbar-default .navbar-brand {
-  color: #265E22;
+  color: #383434;
 }
 
 .navbar-default .navbar-brand:hover {
-  color: #265E22;
+  color: #383434;
 }
 
 .navbar-default {
@@ -251,15 +262,15 @@ img.celtic-head {
 }
 
 .navbar-default .navbar-nav > li > a {
-  color: #000;
+  color: #231f20;
   text-decoration: none;
 }
 
 .navbar {
   position: relative;
   min-height: 100px;
-  margin-bottom: 20px;
-  border: 1px solid transparent;
+  margin-bottom: 0;
+  border: none;
 }
 
 .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
@@ -267,14 +278,19 @@ img.celtic-head {
 }
 
 .container-fluid {
-  background-color: none;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 @media (min-width: 360px) {
 	.center-logo {
 		margin-left: 21%;
 	}
-
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10 {
+    text-align: center;
+  }
 }
 
 @media (min-width: 411px) {
@@ -291,6 +307,9 @@ img.celtic-head {
 	    float: left;
 	    margin: 20px;
 	}
+  .navbar {
+      border-radius: 0;
+  }
 }
 
 @media (min-width: 992px) {
@@ -303,6 +322,20 @@ img.celtic-head {
 	.center-logo {
 		margin-left: 38%;
 	}
+}
+
+
+
+/*Well*/
+
+.well {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: inherit;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
 
