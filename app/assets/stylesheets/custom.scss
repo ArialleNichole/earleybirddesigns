@@ -45,8 +45,11 @@ body {
   font-size: 23.125px;
   line-height: 1.428571429;
   color: #E6E6E6; 
-  background-image: url(images/rocks-fog-path-foggy.jpg);
   min-height: 1200px;
+}
+
+.backimg {
+  background-image: url(rocks-fog-path-foggy.jpg);
 }
 
 .overlay {
